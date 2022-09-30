@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Voice of Islam</title>
+    <meta name="description" content="The Centre’s goal is to continue to build and develop
+    relationships with the public sector to raise awareness of the role of Islam and Muslims in wider
+    society as
+    well as promoting better understanding of Islam through islamic workshop">
+  <meta name="keywords" content="deeni workshop, voice of islam, voice of islam kashmir, suhail salafi waskura">
+  <meta name="author" content="Danish shafiq">
+  <link rel="icon" href="G.png" />
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .bgimg {
+        background-image: url('slider_3.jpg');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+    }
+
+    .topleft {
+        position: relative;
+/* left: 20px; */
+text-align: center;
+top: 0;
+/* transform: translate(50%, 0); */
+display: flex;
+  justify-content: center;
+
+    }
+
+    .bottomleft {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        border: 2px solid transparent;
+        background-color: rgba(37, 193, 34, 0.775);
+        padding: 2px;
+        border-radius: 15%;
+        text-decoration: none;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+    a{
+        text-decoration: none;
+         color: white;
+    }
+</style>
+</head>
+<body>
+
+    <div class="bgimg">
+       <center> <div class="topleft">
+            <p><img src="G.png" alt="" width="122"></p>
+        </div></center>
+        <div class="middle">
+            <h1>Launched</h1>
+            <hr>
+            <p id="demo" style="font-size:30px"></p>
+        </div>
+        <a href="https://voiceofislam.netlify.app/">  <div class="bottomleft">
+            <p>Go to Website</p>
+        </div>
+    </a>
+    </div>
+
+    <script>
+        // Set the date we're counting down to
+        var countupDate = new Date("Sep 20, 2022 06:37:25").getTime();
+
+        // Update the count down every 1 second
+        var countupfunction = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = now - countupDate;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text
+            if (distance < 0) {
+                clearInterval(countupfunction);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
